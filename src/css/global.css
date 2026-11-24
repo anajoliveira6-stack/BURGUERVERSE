@@ -1,0 +1,125 @@
+/* Configuracao inicial e temas consumindo as variaveis do design-system */
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  font-size: var(--fs-base); /* 1.6rem = 16px */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout de Container para alinhamento central */
+.container {
+  width: 100%;
+  max-width: 120rem; /* 1200px maximo */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Fixo */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(15, 15, 17, 0.95);
+  backdrop-filter: blur(1rem);
+  border-bottom: 0.1rem solid var(--color-border);
+  padding: 1.6rem 0;
+}
+
+.header__nav{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__logo{
+
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+
+}
+.header__logo  span{ color: var(--color-secondary);}
+
+/* 
+meu código
+.header_menu{
+
+display: flex;
+gap: 20px;
+
+} */
+
+/* código do Ivo */
+.header_menu{
+  display: flex;
+  gap: 2.4rem;
+}
+
+.header__link{
+
+font-weight: 500;
+transition: color var(--transition-fast);
+
+}
+
+.header__link:hover{
+
+color: var(--color-primary);
+
+}
+
+.btn{
+/*  inline-flex deixa tudo debtro do batão alinhado (ícone e texto )*/
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0.8rem;
+padding: 1.2rem 2.4rem;
+border-radius: var(--radius-sm);
+/* Deixa a letra maos grossa, aumenta negrito */
+font-weight: 600;
+/* tira a borda do botão */
+border: none;
+/* Muda a setinha do mouse para maozinha */
+cursor: pointer;
+transition: background-color: var(--transition-fast), transform var(--transition-fast);
+
+}
+
+.btn:hover{
+
+  transform: translate(-0.2rem);
+}
+
+.btn--primary{
+
+background-color: var(--color-primary);
+color: var(--color-text-main);
+
+}
+
+.btn--primary:hover{
+
+background-color: var(--color-primary-hover);
+
+}
+
+.hero{
+  padding: 8rem 8;
+  min-height: calc(108vh - 7rem);
+  display: flex;
+  align-items: center;
+}
+
+.hero__grid{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+

@@ -92,7 +92,7 @@ transition: background-color: var(--transition-fast), transform var(--transition
 
 .btn:hover{
 
-  transform: translate(-0.2rem);
+  transform: translateY(-0.2rem);
 }
 
 .btn--primary{
@@ -115,7 +115,7 @@ background-color: var(--color-primary-hover);
   align-items: center;
 }
 
-.hero__grid{
+.hero-grid{
 
   display: grid;
   grid-template-columns: 1fr 1fr;
